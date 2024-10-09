@@ -1,0 +1,22 @@
+.table-custom th, .table-custom td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .table-custom th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  .table-custom {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table-custom td {
+    vertical-align: top;
+  }
+  .table-custom th, .table-custom td {
+    word-wrap: break-word;
+  }
+  .table-1 , .table-2{
+    width: 50% ;
+}

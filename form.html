@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .error-border {
+          border: 2px solid red;
+        }
+      </style>
+    
+    <link rel="stylesheet" href="./Assets/css/form.css">
+    <link rel="stylesheet" href="./Assets/css/header.css">
+    <link rel="stylesheet" href="./Assets/css/table.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- Header -->
+<header class="bg-dark text-white py-2">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-lg-start text-center">
+                <p class="mb-0">
+                    <strong>Address:</strong> Civil Lines, Parikrama Marg, Faizabad, Ayodhya - 
+                    Phone: (05278) 223460, 223969
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 text-lg-end text-center">
+                <p class="mb-0">
+                    <strong>Call Us:</strong> +91-82872-80191 | 
+                    <strong>Mail Us:</strong> vcafda@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./Assets/images/property_logo.png" alt="Property Logo" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="home.html">Home</a>
+                </l>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="form.html">Application Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+   
+
+    <!-- form here -->
+    <div id="services" class="core-service-area with-black-bg ptb-100" style="padding-top : 20px;">
+        <div class="container services-container">
+        <div class="main-section-title">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                <a class="nav-link active" id="core-service-1-tab" data-bs-toggle="tab" href="#core-service-1" role="tab" aria-controls="core-service-1">Basic Details</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" id="core-service-2-tab" data-bs-toggle="tab" href="#core-service-2" role="tab" aria-controls="core-service-2">Upload Documents</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" id="core-service-3-tab" data-bs-toggle="tab" href="#core-service-3" role="tab" aria-controls="core-service-3">Bank Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="core-service-6-tab" data-bs-toggle="tab" href="#core-service-6" role="tab" aria-controls="core-service-6">Pay And Download Brochure</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="core-service-7-tab" data-bs-toggle="tab" href="#core-service-7" role="tab" aria-controls="core-service-7">Pay Registration Fee & Apply For Scheme</a>
+                        </li>
+              
+                </ul>
+        <h2 class="text-center mb-5">Application Registration</h2>
+        </div>
+        <div class="core-service-list-tab">
+        <!-- <div class="progress-container">
+            <div class="progress-step" onclick="toggleStep(this)">
+                <div class="step-circle">1</div>
+                <div class="progress-title">Personal Information</div>
+            </div>
+            <div class="progress-step" onclick="toggleStep(this)">
+                <div class="step-circle">2</div>
+                <div class="progress-title">Complain Information</div>
+            </div>
+            <div class="progress-step" onclick="toggleStep(this)">
+                <div class="step-circle">3</div>
+                <div class="progress-title">Upload File</div>
+            </div>
+            <div class="progress-step" onclick="toggleStep(this)">
+                <div class="step-circle">4</div>
+                <div class="progress-title">Finish</div>
+            </div>
+        </div> -->
+        
+        <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="core-service-1" role="tabpanel">
+        <div class="row align-items-center justify-content-center">
+        
+        
+                <form id="contactForm">
+                <div class="row mx-0">
+                <div class="col-lg-12 col-md-12">
+                <div class="row applicant-row-above">
+                    
+                    
+                    <fieldset class="row applicant-row">
+                  <legend class="applicant-legend">Primary Applicant</legend>
+                
+                  <div class="col-sm-3 col-lg-3">
+                <div class="form-group">
+                <label>Name ( नाम ) <span style="color:red;">*<span></span></label>
+                <input type="text" name="name" id="name" class="form-control"  data-error="Please enter your name" placeholder="Enter your name" >
+                <!-- <div class="help-block with-errors"></div> -->
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+                </div>
+                <div class="col-sm-3 col-lg-3" style="display: none;">
+                    <div class="form-group">
+                        <label for="size">Property Size</label>
+                        <select name="size" id="size" class="form-control"  data-error="Please select your Property Size">
+                            <option value="" disabled selected>Select your Property Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                            <option value="Up to 4000 Sq Meter">Up to 4000 Sq Meter</option>
+                            <option value="Up to 3000 Sq Meter">Up to 3000 Sq Meter</option>
+                            <option value="Up to 2000 Sq Meter">Up to 2000 Sq Meter</option>
+                            <!-- Add more options as needed -->
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3 col-lg-2">
+                    <div class="form-group">
+                    <label>DOB ( जन्म तिथि ) <span style="color:red;">*<span></span>
+                    </label>
+                    <input type="date" name="dob" id="dob" class="form-control"  data-error="Please enter your DOB" placeholder="pento@gmail.com">
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+        
+                    <div class="col-sm-3 col-lg-2">
+                        <div class="form-group" >
+                            <label for="Gender">Gender ( लिंग )  <span style="color:red;">*<span></span>
+                            </label>
+                            <select   name="Gender" id="Gender" class="form-control"  data-error="Please select your Gender">
+                                <option value=""  disabled selected>Select your Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                              
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    
+                <div class="col-sm-3 col-lg-4">
+                <div class="form-group">
+                <label>Father’s Name / Husband ( पिता का नाम / पति ) <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="father_name" id="father_name"  data-error="Please enter your Father's Name" class="form-control" placeholder="Father's Name / Husband">
+                <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="col-sm-5 col-lg-4">
+                <div class="form-group">
+                <label>Nominee Details ( नामांकित व्यक्ति का विवरण ) <span style="color:red;">*<span></span></label>
+                <input type="text" name="nominee_details" id="nominee_details" class="form-control"  data-error="Please enter your Nominee Details" placeholder="your subject">
+                <div class="help-block with-errors"></div>
+                </div>
+                </div>
+                <div class="col-sm-2 col-lg-5">
+                    <div class="form-group" >
+                        <label for="Gender">Relation With Nominee (नामांकित व्यक्ति के साथ संबंध) <span style="color:red;">*<span></span>
+                        </label>
+                        <select name="Gender" id="Gender" class="form-control"  data-error="Please select your Gender">
+                            <option value="" disabled selected>Select Your Relation</option>
+                            <option value="brother">Brother</option>
+                            <option value="Sister">Sister</option>
+                            <option value="Mother">Mother</option>
+                            <option value="Father">Father</option>
+                            <option value="Wife">Wife</option>
+                            <option value="Husband">Husband</option>
+                            <option value="Son">Son</option>
+                            <option value="Daughter">Daughter</option>
+        
+        
+                            <!-- Add more options as needed -->
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+        
+                <div class="col-sm-4 col-lg-3">
+                    <div class="form-group">
+                    <label>Email ( ईमेल ) 
+                    </label>
+                    <input type="email" name="email" id="email"  data-error="Please enter your Email" class="form-control" placeholder="Email">
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="form-group" >
+                            <label for="Category">Category ( श्रेणी ) <span style="color:red;">*<span></span>
+                            </label>
+                            <select name="Category" id="Category" class="form-control"  data-error="Please select your Category">
+                                <option value="" disabled selected>Select Category &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                <option value="scheduled_caste">General</option>
+                                <option value="scheduled_caste">Scheduled Caste</option>
+                                <option value="female">Scheduled Tribe</option>
+                                <option value="female">Other Backward Classes</option>
+                                <option value="female">Legislator/Member of Parliament and Freedom Fighter</option>
+                                <option value="female">Government employees and security personnel who have completed the age of 50 years</option>
+                                <option value="female">Employees of the Development Authority/UP Housing Development Board, Water Institution, Municipal Corporation, and Local Bodies</option>
+                                <option value="female">Retired soldiers and their dependents</option>
+                                <option value="female">Persons with disabilities</option>
+        
+                                <!-- Add more options as needed -->
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4">
+                    <div class="form-group">
+                    <label>Applicant Mobile ( आवेदक का मोबाइल ) <span style="color:red;">*<span></span>
+                    </label>
+                    <input type="text" name="applicant_mobile" id="applicant_mobile" class="form-control"   placeholder="Applicant Mobile">
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4">
+                        <div class="form-group">
+                        <label>Applicant Alternate Mobile ( वैकल्पिक मोबाइल ) <span style="color:red;">*<span></span></label>
+                        <input type="text" name="applicant_alternate_mobile" id="applicant_alternate_mobile" class="form-control"   placeholder="Applicant Alternate Mobile">
+                        <div class="help-block with-errors"></div>
+                        </div>
+                        </div>
+        
+                        <div class="col-sm-4 col-lg-5" style="padding-top: 28px;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="toggleForm()">
+                                <label class="form-check-label" for="exampleRadios2" id="jointLabel">
+                                    Joint Application (If Any) ( संयुक्त आवेदन ( यदि कोई हो )) 
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Form fields to toggle -->
+                        <div id="jointApplicationForm" style="display: none;">
+                            <div class="form-check">
+                                <label class="form-check-label" style="font-weight: bold; padding-top:30px; display: inline-block;">Joint Applicant</label>
+                                <hr style="display: inline-block; width: calc(100% - 100px); margin: 0 0 0 10px; vertical-align: middle; border: none; border-top: 1px solid #000;">
+                            </div>
+                            <div class="row">
+                                <!-- First Row -->
+                                <div class="col-sm-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" name="name" id="name" class="form-control"  data-error="Please enter your name" placeholder="Enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label>DOB</label>
+                                        <input type="date" name="dob" id="dob" class="form-control"  data-error="Please enter your DOB">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3">
+                                    <div class="form-group" >
+                                        <label for="Gender">Gender</label>
+                                        <select name="Gender" id="Gender" class="form-control"  data-error="Please select your Gender">
+                                            <option value="" disabled selected>Select your Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <!-- Add more options as needed -->
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Father's Name / Husband</label>
+                                        <input type="text" name="father_name" id="father_name"  data-error="Please enter your Father's Name" class="form-control" placeholder="Father's Name / Husband">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Additional rows can be added as needed in the same way -->
+                                                                                                                                                                                                                                                                 
+                            <!-- Additional form fields here -->
+                        </div>
+                      
+              </fieldset> 
+                            
+                        
+                            
+                  
+                  
+      <fieldset class="row contact-row">
+        <legend class="contact-legend">Contact ( संपर्क )
+        </legend>
+        <label class="form-check-label" style="font-weight: bold; padding-top: 20px;">Communication Address ( संचार पता ) 
+
+        </label>
+        <div class="col-sm-12 col-lg-12">
+            <div class="form-group">
+                <label>Address ( पता) <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="communication_address" id="communication_address" class="form-control"  data-error="Please enter your address" placeholder="Enter your address">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-lg-4">
+            <div class="form-group">
+                <label>City ( शहर ) <span style="color:red;">*<span></span></label>
+                <input type="text" name="communication_city" id="communication_city" class="form-control"  data-error="Please enter your City" placeholder="Enter your City">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-lg-4">
+            <div class="form-group">
+                <label>State ( राज्य ) <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="communication_state" id="communication_state" class="form-control"  data-error="Please enter your State" placeholder="Enter your State">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-lg-4">
+            <div class="form-group">
+                <label>Zip Code ( पिन कोड ) <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="communication_zipCode" id="communication_zipCode" class="form-control"  data-error="Please enter your zipCode" placeholder="Enter your zipCode">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <!-- Checkbox to copy data -->
+        <div class="col-sm-12 col-lg-12">
+            <input type="checkbox" id="sameAddress" onclick="copyAddress()">
+            <label for="sameAddress">Same as Communication Address ( संचार पते के समान )
+            </label>
+        </div>
+        
+        <!-- Permanent Address Section -->
+        <label class="form-check-label" style="font-weight: bold; padding-top: 20px;">Permanent Address स्थायी पता
+        </label>
+        <div class="col-sm-12 col-lg-12">
+            <div class="form-group">
+                <label>Address ( पता)  <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="permanent_address" id="permanent_address" class="form-control"  data-error="Please enter your address" placeholder="Enter your address">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-lg-4">
+            <div class="form-group">
+                <label>City ( शहर ) <span style="color:red;">*<span></span></label>
+                <input type="text" name="permanent_city" id="permanent_city" class="form-control"  data-error="Please enter your City" placeholder="Enter your City">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-lg-4">
+            <div class="form-group">
+                <label>State ( राज्य ) <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="permanent_state" id="permanent_state" class="form-control"  data-error="Please enter your State" placeholder="Enter your State">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4 col-lg-4">
+            <div class="form-group">
+                <label>Zip Code ( पिन कोड ) <span style="color:red;">*<span></span>
+                </label>
+                <input type="text" name="permanent_zipCode" id="permanent_zipCode" class="form-control"  data-error="Please enter your zipCode" placeholder="Enter your zipCode">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        
+        
+      </fieldset>
+                        
+        
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                <div class="let-contact-btn">
+                <button type="submit" class="main-default-btn">Submit and Next</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+                </div>
+                </div>
+                </div>
+                </form>
+                
+        </div>
+        </div>
+
+        <div class="tab-pane fade" id="core-service-2" role="tabpanel">
+        <div class="row align-items-center justify-content-center">
+            <form id="contactForm">
+                <div class="row m-0">
+                <div class="col-lg-12 col-md-12">
+                <div class="row">
+        
+        
+                  
+                    
+                                    
+                    
+                       <fieldset class="row app-docs-row">
+                        <legend class="app-docs-legend">Applicant Documents</legend>
+                        <label class="form-check-label" style="color:red;">File upload instruction: Accepted file formate jpeg/png/pdf and size(500KB)</label>
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                            <label>Aadhar Id (आधार आईडी)
+                                <span style="color:red;">*<span></label>
+                            <input type="text" name="city" id="city" class="form-control"  data-error="Please Aadhar Id" placeholder="Aadhar Id">
+                            <div class="help-block with-errors"></div>
+                            </div>
+                      </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="fileUpload">Upload Aadhar (आधार अपलोड करें)
+                                <span style="color:red;">*<span></span></label>
+                            <input type="file" name="fileUpload" id="fileUpload" class="form-control"  data-error="Please choose a file">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                        <label>PAN Id ( पैन आईडी )
+                            <span style="color:red;">*<span></label>
+                        <input type="text" name="city" id="city" class="form-control"  data-error="Please PAN Id" placeholder="PAN Id">
+                        <div class="help-block with-errors"></div>
+                        </div>
+                  </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="fileUpload">Upload PAN ( पैन अपलोड करें )<span style="color:red;">*<span></span></label>
+                        <input type="file" name="fileUpload" id="fileUpload" class="form-control"  data-error="Please choose a file">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="fileUpload">Upload Cast Certificate ( जाति प्रमाणपत्र अपलोड करें )
+                            <span style="color:red;">*<span></span></label>
+                        <input type="file" name="fileUpload" id="fileUpload" class="form-control"  data-error="Please choose a file">
+                        <div class="help-block with-errors"></div>
+                    </div>
+              </div>
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="fileUpload">Upload Photo ( फोटो अपलोड करें )
+                            <span style="color:red;">*<span></span></label>
+                        <input type="file" name="fileUpload" id="fileUpload" class="form-control"  data-error="Please choose a file">
+                        <div class="help-block with-errors"></div>
+                    </div>
+              </div>
+        
+            <div class="col-sm-6 col-lg-6">
+                <div class="form-group">
+                    <label for="fileUpload">Upload Signature ( हस्ताक्षर अपलोड करें )<span style="color:red;">*<span></span></label>
+                    <input type="file" name="fileUpload" id="fileUpload" class="form-control"  data-error="Please choose a file">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <label for="selfDeclaration">
+                    Upload Affidavit (Please upload the copy in PDF, JPG, PNG, JPEG format only and 500 KB is the max upload size) <br>
+( हलफनामा अपलोड करें ( कृपया केवल PDF, JPG, PNG, JPEG प्रारूप में कॉपी अपलोड करें और 500 KB अधिकतम अपलोड आकार है ))
+
+                    <span style="color:red;">*</span>
+                </label>
+                <br>
+                <a href="assets/Affidavit.pdf" download style="color: blue; text-decoration: underline;">
+                    Download Format of Affidavit
+                </a>
+                <br><br>
+                <input type="file" name="selfDeclaration" id="selfDeclaration" class="form-control" accept=".pdf, .jpg, .jpeg, .png" >
+            </div>
+            
+            <div class="form-group">
+            <label for="selfDeclaration">
+                Upload Self Declaration (Please upload the copy in PDF, JPG, PNG, JPEG format only and 500 KB is the max upload size)* <br>
+( स्व-घोषणा अपलोड करें ( कृपया केवल PDF, JPG, PNG, JPEG प्रारूप में कॉपी अपलोड करें और 500 KB अधिकतम अपलोड आकार है ) )
+
+                <span style="color:red;">*</span>
+            </label>
+            <br>
+            <a href="assets/Self_Declaration.pdf" download style="color: blue; text-decoration: underline;">
+                Download Format of Self Declaration
+            </a>
+            <br><br>
+            <input type="file" name="selfDeclaration" id="selfDeclaration" class="form-control" accept=".pdf, .jpg, .jpeg, .png" >
+        </div>
+        
+            <div id="jointApplicantSection" style="display: none;">
+                <div class="form-check">
+                    <label class="form-check-label" style="font-weight: bold; padding-top:30px; display: inline-block;">Joint Applicant Documents</label>
+                    <hr style="display: inline-block; width: calc(100% - 200px); margin: 0 0 0 10px; vertical-align: middle; border: none; border-top: 1px solid #000;">
+                </div>
+            
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="fileUpload">Upload Photo<span style="color:red;">*</span></label>
+                        <input type="file" name="fileUploadPhoto" id="fileUploadPhoto" class="form-control"  data-error="Please choose a file">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                        <label for="fileUpload">Upload Signature<span style="color:red;">*</span></label>
+                        <input type="file" name="fileUploadSignature" id="fileUploadSignature" class="form-control"  data-error="Please choose a file">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                
+            </div>
+                       </fieldset>
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                <div class="let-contact-btn">
+                <button type="submit" class="main-default-btn">Submit and Next</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+                </div>
+                </div>
+                </div>
+                
+                </form>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="core-service-3" role="tabpanel">
+        <div class="row align-items-center justify-content-center">
+            <form id="contactForm">
+                <div class="row m-0">
+                <div class="col-lg-12 col-md-12">
+                <div class="row">
+                  
+                                    
+                    <fieldset class="row bank-row">
+                        <legend class="bank-legend">Applicant's Bank Details</legend>
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                            <label>Account Holder Name (खाता धारक का नाम)
+                                <span style="color:red;">*<span></label>
+                            <input type="text" name="account_holder" id="account_holder" class="form-control"  data-error="Please Confirm Account holder name" placeholder="Confirm Account holder name">
+                            <div class="help-block with-errors"></div>
+                            </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                        <label>IFSC Code (आईएफएससी कोड)
+                            <span style="color:red;">*<span></label>
+                        <input type="text" name="ifsc_code" id="ifsc_code" class="form-control"  data-error="Please IFSC Code" placeholder="IFSC Code">
+                        <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                      
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                        <label>Account Number (खाता संख्या)
+                            <span style="color:red;">*<span></label>
+                        <input type="text" name="accountNumber" id="accountNumber" class="form-control"  data-error="Please Account No." placeholder="Account No.">
+                        <div class="help-block with-errors"></div>
+                        </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                    <label>Confirm Account Number (खाता संख्या की पुष्टि करें)
+                        <span style="color:red;">*<span></label>
+                    <input type="text" name="confirmAccountNumber" id="confirmAccountNumber" class="form-control"  data-error="Please Account No." placeholder="Account No.">
+                    <div class="help-block with-errors"></div>
+                    </div>
+              </div>
+                  
+                <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                    <label>Bank Name ( बैंक का नाम )
+                        <span style="color:red;">*<span></label>
+                    <input type="text" name="city" id="city" class="form-control"  data-error="Please Bank Name" placeholder="Bank Name">
+                    <div class="help-block with-errors"></div>
+                    </div>
+              </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="fileUpload">Upload Cancelled Cheque (रद्द चेक अपलोड करें)
+                                <span style="color:red;">*<span></span></label>
+                            <input type="file" name="cancelled_cheque" id="cancelled_cheque" class="form-control"  data-error="Please choose Cancelled Cheque">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    </fieldset>
+        
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                <div class="let-contact-btn">
+                <button type="submit" class="main-default-btn">Submit and Next</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+                </div>
+                </div>
+                </div>
+                </form>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="core-service-4" role="tabpanel">
+        <div class="row align-items-center justify-content-center">
+            <form id="contactForm">
+                <div class="row m-0">
+                <div class="col-lg-12 col-md-12">
+                <div class="row">
+                  
+                    <div class="form-check">
+                        <label class="form-check-label" style="font-weight: bold; padding-top:30px; display: inline-block;">Applicant Documents</label>
+                        <hr style="display: inline-block; width: calc(100% - 200px); margin: 0 0 0 10px; vertical-align: middle; border: none; border-top: 1px solid #000;">
+                    </div>
+                                    
+                    <label class="form-check-label" style="color:red;">File upload instruction: Accepted file formate jpeg/png/pdf and size(500kb)</label>
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                            <label>Bank Name<span style="color:red;">*<span></label>
+                            <input type="text" name="city" id="city" class="form-control"  data-error="Please Bank Name" placeholder="Bank Name">
+                            <div class="help-block with-errors"></div>
+                            </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                        <label>Bank Name<span style="color:red;">*<span></label>
+                        <input type="text" name="city" id="city" class="form-control"  data-error="Please Bank Name" placeholder="Bank Name">
+                        <div class="help-block with-errors"></div>
+                        </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="form-group">
+                    <label>Bank Name<span style="color:red;">*<span></label>
+                    <input type="text" name="city" id="city" class="form-control"  data-error="Please Bank Name" placeholder="Bank Name">
+                    <div class="help-block with-errors"></div>
+                    </div>
+              </div>
+                    
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                <div class="let-contact-btn">
+                <button type="submit" class="main-default-btn">Submit and Next</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+                </div>
+                </div>
+                </div>
+                </form>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="core-service-5" role="tabpanel">
+        <div class="row align-items-center justify-content-center">
+            <form id="contactForm">
+                <div class="row m-0">
+                <div class="col-lg-12 col-md-12">
+                <div class="row">
+                  
+                    <div class="form-check">
+                        <label class="form-check-label" style="font-weight: bold; padding-top:30px; display: inline-block;">Applicant Documents</label>
+                        <hr style="display: inline-block; width: calc(100% - 200px); margin: 0 0 0 10px; vertical-align: middle; border: none; border-top: 1px solid #000;">
+                    </div>
+                                    
+                    <label class="form-check-label" style="color:red;">File upload instruction: Accepted file formate jpeg/png/pdf and size(500kb)</label>
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                            <label>Aadhar Id<span style="color:red;">*<span></label>
+                            <input type="text" name="city" id="city" class="form-control"  data-error="Please Aadhar Id" placeholder="Aadhar Id">
+                            <div class="help-block with-errors"></div>
+                            </div>
+                      </div>
+                    <div class="col-sm-6 col-lg-6">
+                        <div class="form-group">
+                            <label for="fileUpload">upload Aadhar<span style="color:red;">*<span></span></label>
+                            <input type="file" name="fileUpload" id="fileUpload" class="form-control"  data-error="Please choose a file">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                <div class="let-contact-btn">
+                <button type="submit" class="main-default-btn">Submit and Next</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+                </div>
+                </div>
+                </div>
+                </form>
+        </div>
+        </div>
+        
+        <div class="tab-pane fade" id="core-service-6" role="tabpanel">
+           <div class="d-flex table-container">
+            <div class="container table-1">
+                <h5 class="text-center mb-5">Review and Submit</h5>
+                <table class="table-custom table table-bordered">
+                  <tr>
+                    <th>Name ( नाम )</th>
+                    <td>john doe </td>
+                  </tr>
+                  <tr>
+                    <th>Property Size</th>
+                    <td>--</td>
+                  </tr>
+                  
+                  <tr><th>Gender ( लिंग )</th>
+                    <td>female</td> </tr>
+                  
+                  <tr>
+                    <th>लिंग (Gender)</th>
+                    <td>Male</td>
+                  </tr>
+                  
+                  <tr>
+                    <th>Relation With Nominee (नामांकित व्यक्ति के साथ संबंध)</th>
+                    <td>brother</td>
+                  </tr>
+                  
+                  <tr>
+                    <th>Email ( ईमेल )</th>
+                    <td>john@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                    <th>Applicant Alternate Mobile ( वैकल्पिक मोबाइल )</th>
+                    <td>8755454565</td>
+                  </tr>
+                  
+                  <tr>
+                    <th>City ( शहर )</th>
+                    <td>ASSAM</td>
+                  </tr>
+                  <tr>
+                    <th>State ( राज्य )</th>
+                    <td>maharashtra</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>Zip Code ( पिन कोड )</th>
+                    <td>400000</td>
+                  </tr>
+                  <tr>
+                    <th>Permanent Address स्थायी पता</th>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nihil ex aliquam culpa labore possimus recusandae voluptates tempore reiciendis voluptate.</td>
+                    
+                  </tr>
+                  <tr>
+                    <th>City ( शहर )</th>
+                    <td>Assam</td>
+                  </tr>
+                 
+                 
+                </table>
+              </div>
+              <div class="container  table-2">
+                <table class="table-custom table table-bordered">
+                  
+                  
+                  <tr>
+                    <th>DOB ( जन्म तिथि )</th>
+                    <td>12/5/2005</td>
+                    
+                  </tr>
+                 
+                  <tr>
+                    <th>Father’s Name / Husband ( पिता का नाम / पति ) </th>
+                    <td> john senior</td>
+                    
+                  </tr>
+                 
+                  <tr>
+                    <th>Nominee Details ( नामांकित व्यक्ति का विवरण )</th>
+                    <td>johh cena</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    <th>श्रेणी (Category)</th>
+                    <td>General</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    <th>Applicant Mobile ( आवेदक का मोबाइल )</th>
+                    <td>7889452234</td>
+                   
+                  </tr>
+                  
+                  <tr>
+                    <th>Address ( पता) </th>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto tempore mollitia expedita exercitationem quasi corporis esse nobis magnam quam nesciunt?</td>
+                   
+                  </tr>
+                  
+                  <tr>
+                    <th>State ( राज्य )</th>
+                    <td>maharashtra</td>
+                    
+                  </tr>
+                  
+                  <tr>
+                    <th>Permanent Address स्थायी पता</th>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nihil ex aliquam culpa labore possimus recusandae voluptates tempore reiciendis voluptate.</td>
+                    
+                  </tr>
+                 
+                  <tr>
+                    <th>State ( राज्य )</th>
+                    <td>maharashtra</td>
+                   
+                  </tr>
+                  
+                  <tr>
+                    <th>Aadhar Id (आधार आईडी)</th>
+                    <td>8524 5245 5555</td>
+                   
+                  </tr>
+                  
+                </table>
+              </div>
+           </div>
+              <div class="declaration">
+                <h5 style="font-weight: 700; color: #6b2b2b;" class="text-center">Declaration</h5>
+                <p>
+                    मैं यह घोषणा करता/करती हूँ कि मैंने इस वशिष्ठ कुंज योजना हेतु इस आवेदन पत्र को ध्यानपूर्वक पढ़ा और सभी शर्तों और प्रावधानों को पूरी तरह से समझा है। 
+                    मैं सहमत हूँ कि इस योजना के लिए दी गई सभी जानकारियाँ मेरे ज्ञान और विश्वास के अनुसार सही हैं। अगर किसी भी समय यह जानकारी गलत पाई जाती है, तो मेरी पात्रता रद्द हो सकती है।
+                </p>
+                <p>
+                    I hereby declare that I have filled out this application for the Vashisht Kunj Yojna under the Ayodhya Development Authority, having fully understood the terms and conditions mentioned therein. I agree that the information provided by me is true to the best of my knowledge, and my eligibility may be canceled if any false information is found.
+                </p>
+                <div class="checkbox text-center">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">I Agree</label>
+                </div>
+                <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                    <div class="let-contact-btn">
+                    <a href="/pg" class="main-default-btn">Submit</a>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                    </div>
+                    </div>
+            </div>
+        
+        </div>
+        
+        <div class="tab-pane fade" id="core-service-7" role="tabpanel">
+            <div class="row align-items-center justify-content-center">
+                <form id="contactForm">
+                    <div class="row m-0">
+                    <div class="col-lg-12 col-md-12">
+                    <div class="row">
+                      
+                        <div class="form-check">
+                            <label class="form-check-label" style="font-weight: bold; padding-top:30px; display: inline-block;">Applicant Registration | Vashishtha Kunj Phase - 1 NH - 27 | Land Category : Commercial </label>
+                            <hr style="display: inline-block; width: calc(100% - 200px); margin: 0 0 0 10px; vertical-align: middle; border: none; border-top: 1px solid #000;">
+                        </div>
+                        <div class="col-sm-3 col-lg-3">
+                            <div class="form-group">
+                                <label for="housingType">Housing Type</label>
+                                <select name="housingType" id="housingType" class="form-control"  data-error="Please select your Housing Type">
+                                    <option value="" disabled selected>Select your Housing Type</option>
+                                    <option value="HIG-II">HIG-II</option>
+                                    <option value="HIG-I">HIG-I</option>
+                                    <option value="MIG-III">MIG-III</option>
+                                    <option value="MIG-II">MIG-II</option>
+                                    <option value="MIG-I">MIG-I</option>
+                                    <option value="LIG-II">LIG-II</option>
+                                    <option value="LIG-I">LIG-I</option>
+                                    <option value="EWS">EWS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <table class="table table-bordered" >
+                            <thead>
+                                <tr>
+                                    <tr>
+                                        <th>क्रम संख्या</th>
+                                        <th>भूखंड का प्रकार</th>
+                                        <th>भूखंडों की संख्या</th>
+                                        <th>भूखंड की माप (मी.)</th>
+                                        <th>भूखंड का क्षेत्रफल (वर्ग मी.)</th>
+                                        <th>भूखंड दर वर्ग मी. (₹ approx.)</th>
+                                        <th>अनुमानित मूल्य (लाख ₹ में)</th>
+                                        <th>फ्री-होल्ड शुल्क सहित विक्रय मूल्य (लाख ₹ में)</th>
+                                        <th>पंजीकरण धनराशि (₹)</th>
+                                    </tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>HIG-II</td>
+                                        <td>160</td>
+                                        <td>10 X 20</td>
+                                        <td>200.00</td>
+                                        <td>31,755.00</td>
+                                        <td>63.51</td>
+                                        <td>71.13</td>
+                                        <td>7,11,300.00</td>
+                                    </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="col-sm-4 col-lg-4" style="padding-top: 28px;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3" onclick="togglePlotSize()">
+                                <label class="form-check-label" for="exampleRadios2" id="jointplotsize">
+                                    View Scheme Details
+                                </label>
+                            </div>
+                        </div>                 
+                        <table class="table table-bordered" id="plotsizelist" style="display:none;">
+                                <thead>
+                                    <tr>
+                                        <th>क्रम संख्या</th>
+                                        <th>भूखंड का प्रकार</th>
+                                        <th>भूखंडों की संख्या</th>
+                                        <th>भूखंड की माप (मी.)</th>
+                                        <th>भूखंड का क्षेत्रफल (वर्ग मी.)</th>
+                                        <th>भूखंड दर वर्ग मी. (₹ approx.)</th>
+                                        <th>अनुमानित मूल्य (लाख ₹ में)</th>
+                                        <th>फ्री-होल्ड शुल्क सहित विक्रय मूल्य (लाख ₹ में)</th>
+                                        <th>पंजीकरण धनराशि (₹)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>HIG-II</td>
+                                        <td>160</td>
+                                        <td>10 X 20</td>
+                                        <td>200.00</td>
+                                        <td>31,755.00</td>
+                                        <td>63.51</td>
+                                        <td>71.13</td>
+                                        <td>7,11,300.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>HIG-I</td>
+                                        <td>152</td>
+                                        <td>9 X 18</td>
+                                        <td>162.00</td>
+                                        <td>31,755.00</td>
+                                        <td>51.44</td>
+                                        <td>57.61</td>
+                                        <td>5,76,100.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>MIG-III</td>
+                                        <td>120</td>
+                                        <td>7.5 X 15</td>
+                                        <td>112.50</td>
+                                        <td>31,755.00</td>
+                                        <td>35.72</td>
+                                        <td>40.00</td>
+                                        <td>4,00,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>MIG-II</td>
+                                        <td>140</td>
+                                        <td>6 X 15</td>
+                                        <td>90.00</td>
+                                        <td>31,755.00</td>
+                                        <td>28.57</td>
+                                        <td>31.99</td>
+                                        <td>3,19,900.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>MIG-I</td>
+                                        <td>70</td>
+                                        <td>6 X 12.5</td>
+                                        <td>75.00</td>
+                                        <td>31,755.00</td>
+                                        <td>23.81</td>
+                                        <td>26.66</td>
+                                        <td>2,66,600.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>LIG-II</td>
+                                        <td>35</td>
+                                        <td>5 X 12</td>
+                                        <td>60.00</td>
+                                        <td>30,960.00</td>
+                                        <td>18.57</td>
+                                        <td>20.79</td>
+                                        <td>2,07,900.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>LIG-I</td>
+                                        <td>70</td>
+                                        <td>5 X 10</td>
+                                        <td>50.00</td>
+                                        <td>30,960.00</td>
+                                        <td>15.48</td>
+                                        <td>17.33</td>
+                                        <td>1,73,300.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>EWS</td>
+                                        <td>96</td>
+                                        <td>4 X 9</td>
+                                        <td>36.00</td>
+                                        <td>28,575.00</td>
+                                        <td>10.28</td>
+                                        <td>11.51</td>
+                                        <td>1,15,100.00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2" style="text-align:right; font-weight:bold;">कुल भूखंडों की संख्या:</td>
+                                        <td>919</td>
+                                    </tr> 
+                                </tfoot>
+                            </table>
+                            
+                    </div>
+                    </div>
+                    
+                        
+                    <div class="col-md-12 col-lg-12" style="padding-top: 20px; text-align: center;">
+                    <div class="let-contact-btn">
+                    <a href="/pg" class="main-default-btn">Pay Registration Fee</a>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                    </div>
+                    </div>
+                    </div>
+                    </form>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-md-start text-center">
+                <p class="mb-0">© 2024 Ayodhya Development Authority</p>
+            </div>
+            <div class="col-md-6 text-md-end text-center">
+                <p class="mb-0">All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+              event.preventDefault(); // Prevent form submission for validation
+        
+              let isValid = true;
+        
+              // Get all input and select elements
+              const fields = document.querySelectorAll('#contactForm input, #contactForm select');
+        
+              fields.forEach(field => {
+                if (field.value.trim() === '') {
+                  // Add red border if empty
+                  field.classList.add('error-border');
+                  isValid = false;
+                } else {
+                  // Remove red border if filled
+                  field.classList.remove('error-border');
+                }
+              });
+        
+              if (isValid) {
+                // Submit form if all fields are valid
+                alert('Form submitted successfully');
+                // You can proceed with the form submission here
+              } else {
+                alert('Please fill out all required fields.');
+              }
+            });
+          </script>
+        
+        
+        
+        <!-- <script>
+            function updateStep(step) {
+                // Remove 'step-active' class from all steps
+                const steps = document.querySelectorAll('.progress-step');
+                steps.forEach(s => {
+                    // s.classList.remove('step-active');
+                    s.classList.add('step-inactive');
+                   
+                });
+        
+                // Add 'step-active' to the clicked step
+                step.classList.add('step-active');
+                step.classList.remove('step-inactive');
+
+
+            }
+        </script> -->
+        <script>
+            function toggleStep(step) {
+    if (!step.classList.contains('step-active')) {
+        step.classList.add('step-active');
+    } else {
+        step.classList.remove('step-active');
+    }
+}
+
+        </script>
+        
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission for validation
+        
+                let isValid = true;
+        
+                // Fields and their corresponding error messages
+                const fields = [
+                    { field: document.getElementById('name'), error: document.getElementById('nameError') },
+                    { field: document.getElementById('dob'), error: document.getElementById('dobError') },
+                    { field: document.getElementById('gender'), error: document.getElementById('genderError') },
+                    { field: document.getElementById('father_name'), error: document.getElementById('fatherNameError') }
+                    // Add additional fields and errors here
+                ];
+        
+                fields.forEach(({ field, error }) => {
+                    if (field.value.trim() === '') {
+                        field.classList.add('error-border');
+                        error.style.display = 'block';
+                        isValid = false;
+                    } else {
+                        field.classList.remove('error-border');
+                        error.style.display = 'none';
+                    }
+                });
+        
+                if (isValid) {
+                    alert('Form submitted successfully');
+                } else {
+                    alert('Please fill out all required fields.');
+                }
+            });
+        </script>
+    
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
